@@ -1,10 +1,11 @@
 
 
 let board = document.getElementById('board');
+let reset = document.getElementById('reset-button');
 
 let xTurn = true;
 
-// Update squares on click
+// Update squares on click ---------------------------------
 
 let squareClickHandler = function (elem) {
     if (elem.clicked) {
@@ -32,7 +33,26 @@ for (let i = 0; i < board.rows.length; i++) {
     }
 }
 
+// Reset the board -------------------------------
 
+let resetHandler = function () {
+    for (let i = 0; i < board.rows.length; i++) {
+        for (let j = 0; j < board.rows[i].cells.length; j++) {
+            if (board.rows[i].cells[j] !== null) {
+                board.rows[i].cells[j].innerHTML = null;
+                board.rows[i].cells[j].clicked = false;
+            }
+        }
+    }
+
+}
+
+reset.onclick = function () {
+    resetHandler();
+}
+
+
+//
 
 
 
