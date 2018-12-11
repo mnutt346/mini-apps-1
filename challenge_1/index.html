@@ -8,22 +8,41 @@
 
 <body>
     <h2>Nic-Tac-Toe!</h2>
+    <!-- <form>
+        <input type='text' id='player-one-name-input' placeholder='Player One Name' value=''>
+        <button type='button' id='player-one-button'>Set name</button>
+        </input>
+    </form>
+
+    <input type='text' id='player-two-name-input' placeholder='Player Two Name' value=''>
+    <button type='button' id='player-two-button'>Set name</button>
+    </input> -->
+    <table id='wins' width='700' height='12' cellpadding='0' style='table-layout:fixed'>
+        <tr>
+            <th id='player-one-name'>Player One</th>
+            <th id='player-two-name'>Player Two</th>
+        </tr>
+        <tr>
+            <td id='player-one-score' align='center' width='100%'>0</td>
+            <td id='player-two-score' align='center' width='100%'>0</td>
+        </tr>
+    </table>
     <button type='button' id='reset-button'>Put... the bunny... back... in the box.</button>
     <table id='board' border='1' width='700' height='700' cellpadding='0' style='table-layout: fixed'>
         <col width="70px" />
         <col width="70px" />
         <col width="70px" />
-        <tr>
+        <tr style='height:80px;'>
             <td id='square'></td>
             <td id='square'></td>
             <td id='square'></td>
         </tr>
-        <tr>
+        <tr style='height:80px;'>
             <td id='square'></td>
             <td id='square'></td>
             <td id='square'></td>
         </tr>
-        <tr>
+        <tr style='height:80px;'>
             <td id='square'></td>
             <td id='square'></td>
             <td id='square'></td>
