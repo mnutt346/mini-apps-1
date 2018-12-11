@@ -1,0 +1,7 @@
+html
+    body
+        h1 WHO ACTUALLY USES CSV's????
+        form(id='main-form', action='/post_JSON', method='POST', )
+            textarea(name='textarea', id='text-area', placeholder='Input JSON here...')
+            input(type='submit', id='submit-button', value='Submit')
+        p(style='white-space:pre') #{rendered};
