@@ -20,6 +20,7 @@ app.post('/post_JSON', (req, res) => {
     let data = JSON.parse(req.body.textarea);
     let headers = 'firstName,lastName,county,city,role,sales\n';
 
+    // Convert object to CSV
     const JsonToCsv = function (salesReport, output = '') {
         output += (`${salesReport.firstName},${salesReport.lastName},${salesReport.county},${salesReport.city},${salesReport.role},${salesReport.sales}\n`);
 
@@ -30,9 +31,11 @@ app.post('/post_JSON', (req, res) => {
         }
         return output
     }
-    let csv = (headers + JsonToCsv(data));
-    console.log(csv);
 
+    // Add headers to CSV
+    let csv = (headers + JsonToCsv(data));
+
+    // Render new view 
     res.render('csv', { rendered: csv })
     res.end();
 })

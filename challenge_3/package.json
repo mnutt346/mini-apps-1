@@ -1,0 +1,24 @@
+{
+  "name": "challenge_3",
+  "version": "1.0.0",
+  "description": "challeng_3 package.json",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnutt346/hratx38-mini-apps-1.git"
+  },
+  "keywords": [
+    "shopping",
+    "cart"
+  ],
+  "author": "Michael Nutt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnutt346/hratx38-mini-apps-1/issues"
+  },
+  "homepage": "https://github.com/mnutt346/hratx38-mini-apps-1#readme"
+}

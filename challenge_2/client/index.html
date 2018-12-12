@@ -7,10 +7,19 @@
 
 <body>
     <h1 id='heading'></h1>
+    <!-- USING TEXT AREA FORM -->
     <form id='main-form' action='/post_JSON' method='POST'>
+        <!-- <form id='main-form'> -->
         <textarea name='textarea' id='text-area' placeholder='Input JSON here...'></textarea>
-        <input type='submit' id='submit-button' value='Submit'></button>
+        <input type='submit' id='submit-button' value='Submit'>
     </form>
+
+    <!-- USING FILE PICKER  -->
+    <!-- <form id='main-form' action='/post_JSON' method='POST'>
+        <input type='file' id='file-picker' name='filepicker'>
+        <input type='submit' id='submit-button' value='Submit'>
+    </form> -->
+
     <p id='csv'></p>
 </body>
 <script type='text/javascript' src='/app.js'></script>
