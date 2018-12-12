@@ -14,6 +14,7 @@ app.listen(port, function () {
   console.log(`Server listening on port ${port}`)
 })
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/public/index.html'))
-// })
+app.post('/user_info', (req, res) => {
+  console.log(req.body);
+  res.sendStatus(200);
+})
